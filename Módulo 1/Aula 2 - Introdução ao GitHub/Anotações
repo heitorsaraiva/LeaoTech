@@ -1,0 +1,16 @@
+**Comandos Git -> GitHub:**
+- git status = Mostrar status da aplicação
+- git add . = Adicionar novos arquivos
+- git commit -m "test" = Commitar e mandar os novos arquivos
+- git push = Enviar para o Git
+- git pull = Puxar do repositorio remoto mais recente
+- git --version = Buscar Versão do Git
+- git clone = Clonar repositório
+
+Caso for a primeira vez, só arrastar par baixo para  ver as instruções do GitHub;
+
+**Comandos Terminal:**
+- ls = List do diretorio
+- cd + TAB = Trocar de pasta
+- cntrl + l = Limpar terminal
+
