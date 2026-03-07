@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<style>
+    table, td, tr, th{
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 3px;
+    }  
+
+    h1 { 
+        background-color: black; 
+        color: rgb(255, 255, 255); 
+        padding: 10px;
+     } 
+
+</style>
+
+</html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Trabalhando com Tabelas</h1>
+    
+    <h3>Colspan</h3>
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Cidade</th>
+        </tr>
+        <tr>
+            <td>Ana</td>
+            <td colspan="2">25</td> <!-- Colspan para ocupar duas colunas --> 
+            <!-- <td>São Paulo</td> Ele empurra para o lado --> 
+        </tr>
+        <tr>
+            <td>Bruno</td>
+            <td>30</td>
+            <td>Rio de Janeiro</td>
+        </tr>
+        <tr>
+            <td>Carla</td>
+            <td>28</td>
+            <td>Belo Horizonte</td>
+        </tr>
+    </table>
+    <br><br>
+    <h3>Rowspan</h3>
+    <table>
+        <tr>
+            <th>Liguagem</th>
+            <th>Frameworks</th>
+        </tr>
+        <tr > <!-- Rowspan para ocupar duas linhas -->
+            <td rowspan="2">Python</td>
+            <td>Flask</td>
+        </tr>
+        <tr>
+            <td>FastAPI</td>
+        </tr>
+        <tr>
+            <td rowspan="2">JavaScript</td>
+            <td>Express</td>
+        </tr>
+        <tr>
+            <td>React</td>
+        </tr>
+    </table>
+      <br>
+
+      <h1>Trabalhando com Formulário</h1>
+      
+      <form action="">
+        <br>
+        <label for="nome">Text:</label>
+        <input type="text" id="nome" name="nome">
+
+        <br><br>
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha">
+
+        <br><br>
+        <label for="date">Data:</label>
+        <input type="date" id="date">
+
+        <br><br>
+        <label for="search">Pesquisar:</label>
+        <input type="search" id="search">
+
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email">
+
+        <br><br>
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha">
+        
+        <br><br>
+        <label for="numero">Número:</label>
+        <input type="number" step="2" id="numero">
+
+        <br><br>
+        <input type="radio" id="vaga1">
+        <label for="vaga1">Opção</label>
+
+        <br><br>
+        <input type="checkbox" id="check">
+        <label for="check">Checkbox</label>
+
+        <br><br>
+        <label for="comentario">Comentário:</label><br>
+        <textarea name="" id="comentario" rows="5" cols="30" placeholder="teste" maxlength="10"></textarea>
+
+        <br><br>
+        <select name="" id="">
+            <option value="">Selecione uma opção</option>
+            <option value="opcao1">Opção 1</option>
+            <option value="opcao2">Opção 2</option> 
+            <option value="opcao3">Opção 3</option>
+        </select>
+
+        <br><br>
+        <input type="submit" value="Enviar" >
+      </form>
+      
+      
+
+</body>
+</html>
