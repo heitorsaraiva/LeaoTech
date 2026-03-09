@@ -24,8 +24,6 @@ body {
   color: rgb(10, 164, 202);
 }
 
-
-
 h3 {
   text-align: center;
   color: rgb(10, 164, 202);
@@ -48,16 +46,16 @@ textarea {
   color: white;
 }
 
-button { 
-    background-color: rgb(10, 164, 202);
-    color: white;
-    margin: 20px 0px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    box-sizing: border-box;
-    width: 100%;
+button {
+  background-color: rgb(10, 164, 202);
+  color: white;
+  margin: 20px 0px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 footer {
@@ -68,19 +66,16 @@ footer {
   width: 100%;
   background-color: rgb(31, 31, 31);
   border-top: 1px solid rgb(10, 164, 202);
-  
 }
 
 header {
-    margin-top: auto;
+  margin-top: auto;
   text-align: center;
   padding: 20px 0;
   color: rgb(10, 164, 202);
   width: 100%;
   background-color: rgb(31, 31, 31);
-    border-bottom: 1px solid rgb(10, 164, 202);
-
-  
+  border-bottom: 1px solid rgb(10, 164, 202);
 }
 
 main {
