@@ -1,50 +1,63 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulário de Candidatura</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-    <h3>Formulário de Candidatura</h3>
-    <br>
-    <label for="">Nome:</label>
-    <input type="text" name="nome" id="nome">
-    <br><br>
+  <header>
+    Trabalhando com formulários, atributos e CSS externo
+  </header>
+  <main>
+ <div class="box-form">
+    <form>
+    <h3>FORMULÁRIO DE CANDIDATURA</h3>
+    <label for="nome">Nome:</label>
+    <input type="text" name="nome" id="nome" /><br /><br />
+
     <label for="">Email:</label>
-    <input type="email" name="email" id="email">
-    <br><br>
+    <input type="email" name="email" id="email" /><br /><br />
+
     <label for="">Cargo de Tecnologia:</label>
     <select name="" id="">
-            <option value="">Pessoa Desenvolvedora</option>
-            <option value="opcao2">analista de sistemas</option> 
-            <option value="opcao3">administrador(a) de banco de dados </option>
-            <option value="opcao4">testador(a)</option>
-        </select>
-    <br><br>
-    <label for="">Gênero:</label>    
-    <input type="radio" name="genero" id="masculino" value="masculino">
+      <option value="" disabled selected>Selecione um cargo</option>
+      <option value="pessoa-desenvolvedora">Pessoa Desenvolvedora</option>
+      <option value="opcao2">Analista de sistemas</option>
+      <option value="opcao3">Administrador(a) de banco de dados </option>
+      <option value="opcao4">Testador(a)</option>
+    </select><br /><br />
+
+    <label for="">Gênero:</label>
+    <input type="radio" name="genero" id="masculino" value="masculino" />
     <label for="masculino">Masculino</label>
-    <input type="radio" name="genero" id="feminino" value="feminino">
+    <input type="radio" name="genero" id="feminino" value="feminino" />
     <label for="feminino">Feminino</label>
-    <input type="radio" name="genero" id="outro" value="outro">
-    <label for="outro">Outro</label>
-    <br><br>
+    <input type="radio" name="genero" id="outro" value="outro" />
+    <label for="outro">Outro</label><br /><br />
+
     <label for="">Unidade de Interesse:</label>
-    <input type="checkbox" name="unidade" id="unidade1" value="unidade1">
+    <input type="checkbox" name="unidade1" id="unidade1" value="unidade1" />
     <label for="unidade1">Fortaleza</label>
 
-    <input type="checkbox" name="unidade" id="unidade2" value="unidade2">
+    <input type="checkbox" name="unidade2" id="unidade2" value="unidade2" />
     <label for="unidade2">Caucaia</label>
 
-    <input type="checkbox" name="unidade" id="unidade3" value="unidade3">
-    <label for="unidade3">Eusébio</label>
-    <br><br>
-    <label for="">Fale mais sobre você:</label><br>
-    <textarea name="" id="" rows="5" cols="50" minlength="10" maxlength="200"></textarea>
-    
-    <br>
-    <button type="submit">Enviar</button>
+    <input type="checkbox" name="unidade3" id="unidade3" value="unidade3" />
+    <label for="unidade3">Eusébio</label><br /><br />
 
+    <label for="">Fale mais sobre você:</label><br />
+    <textarea name="" id="" rows="5" cols="50" minlength="10" maxlength="200"></textarea><br />
+
+    <button type="submit">Enviar</button>    </form>  </div><br><br><br>
+  </main>
+ 
+  <footer>
+    Toos os direitos reservados - Heitor Dev 2026 &copy;
+  </footer>
 </body>
+
 </html>

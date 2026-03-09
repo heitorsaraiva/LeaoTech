@@ -1,0 +1,87 @@
+/* Me aventurando pelo css externo */
+
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  font-family: "Bricolage Grotesque", sans-serif;
+  margin: 0;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(46, 46, 46);
+  font-weight: 600;
+  min-height: 100vh;
+}
+
+.box-form {
+  background-color: rgb(31, 31, 31);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 40px 10px rgba(0, 0, 0, 0.9);
+  color: rgb(10, 164, 202);
+}
+
+
+
+h3 {
+  text-align: center;
+  color: rgb(10, 164, 202);
+  font-size: 25px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  background-color: #474646;
+  border-radius: 4px;
+  outline: none;
+  color: white;
+}
+
+button { 
+    background-color: rgb(10, 164, 202);
+    color: white;
+    margin: 20px 0px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+footer {
+  margin-top: auto;
+  text-align: center;
+  padding: 20px 0;
+  color: rgb(10, 164, 202);
+  width: 100%;
+  background-color: rgb(31, 31, 31);
+  border-top: 1px solid rgb(10, 164, 202);
+  
+}
+
+header {
+    margin-top: auto;
+  text-align: center;
+  padding: 20px 0;
+  color: rgb(10, 164, 202);
+  width: 100%;
+  background-color: rgb(31, 31, 31);
+  
+}
+
+main {
+  height: 650px;
+  padding: 60px;
+}
