@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trabalhando com Divs e Sections</title>
+    <link rel="stylesheet" href="style.css" /> <!-- Setando CSS externo -->
+    <!-- CSS interno -->
+    <style>
+        p#interno {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Formas de incluir o css no html</h1>
+        <p id="inline" style="color: brown">- CSS inline - inserir o css em uma linha no html</p> <!-- Vermelho -->
+        <p id="interno">- CSS interno - inserir o css dentro da tag &lt;style&gt; no html</p> <!-- Azul -->
+        <p id="externo">- CSS externo - criar um arquivo .css e linkar no html</p> <!-- Verde -->
+    </div>
+    <hr />
+    <div >
+        <h3>Texto alinhado</h3>
+        <p id="centro">Este é um exemplo de texto alinhado.</p>
+        <p id="esquerda">Este é um exemplo de texto alinhado.</p>
+        <p id="direita">Este é um exemplo de texto alinhado.</p>               
+    </div>
+    <hr>
+    <div >
+        <h3>Tamanho da fonte</h3>
+        <p id="tam-text1">Este é um exemplo de texto alinhado.</p>          
+        <p id="tam-text2">Este é um exemplo de texto alinhado.</p>             
+        <p id="tam-text3">Este é um exemplo de texto alinhado.</p>             
+    </div>
+    <hr>
+    <div id="border">
+        <h3>Tamanho da fonte</h3>
+        <p id="primeiro">Este é um exemplo de texto alinhado.</p>          
+        <p id="segundo">Este é um exemplo de texto alinhado.</p>             
+        <p id="terceiro">Este é um exemplo de texto alinhado.</p>   
+    </div>
+</body>
+
+</html>

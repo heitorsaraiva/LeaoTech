@@ -6,5 +6,5 @@
 - ID = Contexto único
 - Todo input deve ter name para o JS
 - para inputs de radio precisa ter o mesmo name para escolher só um
--  para input que n tem nenhumvalor digitado coloca value
+-  para input que n tem nenhum valor digitado coloca value
 - todos devem ter name, em caso de ter mais de input e escolher 1 só, usa o mesmo name

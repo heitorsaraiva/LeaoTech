@@ -1,0 +1,17 @@
+Divs = Divisião de espaço 
+Div Semantica = - Header (Cabeçalho da página)
+                - Main (Conteúdo principal da página)
+                - Footer (Rodapé da página)
+                - Section (Seção da página)
+                - Article (Artigo da página)
+                - Aside (Conteúdo lateral da página)
+
+CSS = Interno, Externo e inline
+- Alinhamento de Texto: Text-Align: center/left/right/justify (Modelo Word)
+- Tamanho da Fonte: Font-Size
+- Formato da Fonte: Font-Family (Muda a fonte)
+- Cor da Fonte e Plano de Fundo: Color(Para cor do texto), Background-color(Para cor do fundo)
+- Bordas: Border(Criar uma borda), Border-bottom/top/right/left(Sublinhar) + Radius = Arredondar
+
+Escola/Guia de linguagens: https://www.w3schools.com/
+Explicação CSS: https://glossy-juice-9c1.notion.site/CSS-1d02d95e81e0819085c1c85d11ce3c85
