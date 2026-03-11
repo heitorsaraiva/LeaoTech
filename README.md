@@ -1,5 +1,8 @@
 <p align="center">
-  <img src="https://digitalcollege.com.br/wp-content/uploads/2025/12/leao-tech-600x331-1.png" width="120">
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Fortaleza_Esporte_Clube_logo.png" width="55">ㅤㅤ
+<img src="https://digitalcollege.com.br/wp-content/uploads/2025/12/leao-tech-600x331-1.png" width="120">ㅤㅤ
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW0h5j5rJbPeQG9Z4v5gfz3RjZhZZIEZJsxg&s" width="60">ㅤㅤ
+
 </p>
 
 <h1 align="center"><a href="https://digitalcollege.com.br/leaotech/">Leão Tech 2.0</a></h1>
