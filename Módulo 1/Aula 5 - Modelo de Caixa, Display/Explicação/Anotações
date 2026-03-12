@@ -1,0 +1,16 @@
+# para id
+. para class
+
+Tipos de Display:
+- BLOCK(Padrão) - Ocupam toda a largura disponivel - Respeita  margin e padding, largura e altura:
+    todas as divs semanticas, table, li, ol, ul, br.. São do tipo block
+- INLINE - Não da para controlar a altura, largura, padding e margin(Superior e Inferior)
+    span
+- INLINE BLOCK - Ele permite que um elemento fique na mesma linha que outrosmas ainda pode definir largura, altura, margens e padding (como um elemento block). É útil quando se deseja controlar o tamanho de elementos enquanto mantém o layout em linha.
+    img
+- None - É uma propriedade do CSS que oculta completamente um elemento da página, removendo-o do fluxo do layout
+
+
+Existem tipos de unidades de medida:
+- Relativos: VH, PORCENTAGEM
+- Absoluto: CM, PX

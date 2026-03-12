@@ -1,0 +1,93 @@
+h1, h2{
+    text-align: center;
+}
+
+
+#divdivs {
+    border: 2px solid black;
+  
+
+}
+
+#dv {
+    margin: 20px;
+}
+#div1 {
+    border: 2px solid black;
+    padding: 10px;
+    display: inline-block;
+    width: 45%;
+    height: 130px;
+    margin: 10px;
+    
+
+}
+
+#div2 {
+    border: 2px solid black;
+    padding: 10px; 
+    display: inline-block;
+    width: 45%;
+    height: 130px;
+    margin: 10px;
+}
+
+#div3 {
+    border: 2px solid black;
+    padding: 10px;
+    display: inline-block;
+    width: 45%;
+    height: 130px;
+    margin: 10px;
+}
+
+#div4 {
+    border: 2px solid black;
+    padding: 10px;
+    display: inline-block;
+    width: 45%;
+    height: 130px;
+    margin: 10px;
+}
+
+#div11 {
+    border: 2px solid black;
+    padding: 10px;
+    display: block;
+    margin: 10px;
+    width: 25%;
+
+
+}
+
+#div22 {
+    border: 2px solid black;
+    padding: 10px;
+    display: block;
+    margin: 10px;
+     width: 50%;
+
+}
+
+#div33 {
+    border: 2px solid black;
+    padding: 10px;
+    display: block;
+    margin: 10px;
+     width: 75%;
+
+}
+
+#divd {
+    border: 2px solid black;
+    margin: 10px;
+
+}
+
+hr {
+    border: 1px solid black;
+}
+
+/* margin: Primeiro(cima) Segundo(Direita) Terceiro(Baixo), Quarto(Esquerda) */
+/* margin: Primeiro(Cima e baixo) Segundo(Esquerda e Direita) */
+/* margin: Primeiro(Cima) Segundo(Esq e Dir) Terceiro(Baixo) */
