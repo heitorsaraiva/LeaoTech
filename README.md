@@ -12,6 +12,7 @@
   Tudo que o curso ensinar deixarei aqui, acompanhe minha evolução! ;) <br>
 </p>
 
+<h3 align="center">Linguagens Utilizadas:</h3>
 <p align="center">
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/500px-HTML5_logo_and_wordmark.svg.png" width="80">
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/500px-CSS3_logo_and_wordmark.svg.png" width="57">
