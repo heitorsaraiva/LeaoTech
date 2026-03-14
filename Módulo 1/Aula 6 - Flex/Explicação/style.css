@@ -1,0 +1,58 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  border: 2px solid black;
+  padding: 10px;
+  /*SOMENTE PARAM CONTEINERS*/
+  display: flex;
+  flex-direction: row; /*Collum, Row, Reverse*/
+  flex-wrap: nowrap; /*Wrap, Reverse*//*Se não couber na tela ele proíbe a quebra de linha*/
+  /*HORIZONTAL*/justify-content: center; /*Alinhamento Start/End/Center*/
+        /* justify-content: space-between; Se separam igualmente, colam divs nas bordas */
+        /* justify-content: space-around; Espaçamento igual nas duas bordas */
+        /*justify-content: space-evenly; Espaçamento igual em todos */
+  /*VERTICAL*/align-content: center; /*Center/End/Start/BeetWeen/Evelyn/Around/ Strech(Só funciona se n tiver altura)*/
+  /* align-items: ?; */
+  
+
+}
+
+.div1 {
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  
+}
+
+.div2 {
+  background-color: rgb(53, 43, 184);
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+}
+
+.div3 {
+  background-color: rgb(71, 255, 25);
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  
+  order: -1; /*SOMENTE PARA ITEMS*/
+}
+
+.div4 {
+  background-color: rgb(0, 255, 255);
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+}
+
+.div5 {
+  background-color: rgb(232, 255, 25);
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+}

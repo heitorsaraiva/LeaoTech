@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #f7f3ee;
+}
+
+header {
+  background-color: #a83232;
+  text-align: center;
+  padding: 40px;
+  color: white;
+}
+
+.menu-header a{
+  color: white;
+  text-decoration: none;
+}
+
+.container-top {
+    border: 2px solid black;
+    margin: 10px;
+    display: flex;
+    flex-direction: center;
+    justify-content: space-evenly;
+}
+
+
+.container-low {
+    border: 2px solid black;
+    margin: 10px;
+}
+
+.container-left {
+    border: 2px solid black;
+    margin: 10px;
+}
+
+.container-right {
+    border: 2px solid black;
+    margin: 10px;
+}
+
+.container-suggestion {
+    border: 2px solid black;
+    margin: 10px;
+}
+
+
