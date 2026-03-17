@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 7</title>
+    <style>
+        body {
+            margin-bottom: 500pX;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #caixa1 {
+            background: linear-gradient(to right, blue, red, green);
+            width: 200px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #caixa1:hover {
+
+            background: black;
+            transition: 1s;
+            transform: scale(1.2);
+            color: white;
+        }
+
+        #formulario {
+            width: 250px;
+            height: 100px;
+            background-color: aqua;
+            margin-top: 10px;
+            margin-left: 5px;
+            border-radius: 10px;
+            margin-top: 10px;
+            padding: 10px;
+            box-shadow: 4px 4px 10px black;
+            /* delocamentoX deslocamentoY desfoque cor */
+        }
+
+        #nome {
+            background-color: black;
+            color: white;
+            border-end-end-radius: 1px solid red;
+        }
+
+        #nome:focus {
+            background-color: brown;
+            color: blue;
+        }
+
+        .container {
+            border: 2px solid black;
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: grey;
+            margin: 3px;
+            position: static;
+        }
+
+        .verde {
+            background-color: green;
+            position: relative;
+            width: 100px;
+            height: 100px;
+            top: 20px;
+            left: 20px;
+        }
+
+        .divmaior {
+            background-color: grey;
+            display: inline-block;
+            width: 300px;
+            height: 300px;
+            position: relative;
+            top: 50px;
+        }
+
+        .amarelo {
+            background-color: yellow;
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        .divfixa {
+            background-color: yellow;
+            border: 2px solid;
+            margin-top: 10px;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            z-index: 10;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="divfixa">
+       <h1>div fixa</h1>
+    </div>
+
+    <div id="caixa1">
+        <h3>caixa</h3>
+    </div>
+
+    <div id="formulario">
+        <label for="nome">Nome:</label>
+        <input id="nome" type="text">
+        <br><br>
+        <label for="idade">Idade:</label>
+        <input type="number" name="idade">
+    </div>
+
+
+    <div class="container">
+        <div class="box">
+            div1
+        </div>
+        <div class="verde">
+            div2
+        </div>
+        <div class="box">
+            div3
+        </div>
+        <div class="box">
+            div4
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="divmaior">
+            <div class="amarelo">
+                div amarelo
+            </div>
+        </div>
+    </div>
+
+    
+
+
+</body>
+
+</html>

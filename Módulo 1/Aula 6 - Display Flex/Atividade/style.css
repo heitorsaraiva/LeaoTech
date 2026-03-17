@@ -2,7 +2,11 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   background-color: #f7f3ee;
+  margin-top: 160px;
+
+
 }
+
 
 /* Trabalhando com Menu de Navegação */
 .navbar {
@@ -16,7 +20,10 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-   box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 .logo-header h1{
   display: flex;
@@ -112,7 +119,6 @@ body {
 }
 
 
-
 /* Trabalhando com container Left e Right */
 .container-lr {
   margin: 20px 125px;
@@ -143,7 +149,6 @@ body {
 }
 
 
-
 /* Trabalhando com Cards */
 .container-low {
   border: 2px solid #d9c2a7;
@@ -171,6 +176,8 @@ body {
   text-align: center;
   padding: 10px;
 }
+
+
 /*Animação dos Cards*/
 .card1-low, .card2-low, .card3-low {
   flex: 1;
@@ -186,7 +193,6 @@ body {
   box-shadow: 0 12px 25px rgba(0,0,0,0.2);
   color: rgb(146, 9, 9);;
 }
-
 
 
 /* Trabalhando com Painel de Sugestões */
@@ -235,6 +241,7 @@ body {
   transition: 0.3s ease;
 }
 
+
 /*Animação Botão de Sugestão*/
 .container-suggestion button:hover {
   background-color: #8f2a2a;
@@ -242,8 +249,8 @@ body {
   box-shadow: 0 8px 15px rgba(0,0,0,0.2);
 }
 
-/*Trabalhando com footer*/
 
+/*Trabalhando com footer*/
 .container-footer {
   background-color: #a83232;
   color: white;
