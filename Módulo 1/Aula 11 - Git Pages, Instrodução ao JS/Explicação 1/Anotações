@@ -1,0 +1,17 @@
+ENTRADA | Inputs = Entrada de dados
+SAÍDA | Output = Computador fornece uma infomação( Alert )
+
+VARIÁVEL:
+- Nome
+- Tipo
+- valor
+
+VARIÁVEIS:
+- String = Texto
+- Int = Números Inteiro
+- Float = Números Reais
+- Bool = True ou False
+
+let numerodocelular = camelcase
+let numero_do_celular = snake_case
+let numero-do-celular = kebab
