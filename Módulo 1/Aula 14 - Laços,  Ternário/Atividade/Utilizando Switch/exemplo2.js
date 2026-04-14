@@ -1,4 +1,4 @@
-/*3. Crie um programa para mostrar o nome do mês de acordo com o número digitado. 1 = "Janeiro", 2 = "Fevereiro" ....*/
+/*2. Crie um programa para mostrar o nome do mês de acordo com o número digitado. 1 = "Janeiro", 2 = "Fevereiro" ....*/
 
 let mes = prompt("Digite um número de 1 a 12:");
 

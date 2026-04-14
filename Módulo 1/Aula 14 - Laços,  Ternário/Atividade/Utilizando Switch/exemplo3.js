@@ -1,5 +1,5 @@
 /*
-4. Um sistema escolar classifica alunos por conceito.
+3. Um sistema escolar classifica alunos por conceito.
 Solicite ao usuário uma letra (A, B, C ou D) e utilize switch para exibir:
 
 A → "Excelente desempenho"

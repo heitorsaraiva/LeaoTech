@@ -1,5 +1,5 @@
 /*
-6. sistema de saque/depósito (simulação de caixa eletrônico)
+5. sistema de saque/depósito (simulação de caixa eletrônico)
 
 Você está desenvolvendo um sistema simples de caixa eletrônico.
 

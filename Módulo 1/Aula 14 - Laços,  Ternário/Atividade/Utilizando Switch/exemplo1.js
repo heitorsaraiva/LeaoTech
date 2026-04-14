@@ -1,5 +1,5 @@
 /*
-2. Você está desenvolvendo um sistema simples de menu para um aplicativo.
+1. Você está desenvolvendo um sistema simples de menu para um aplicativo.
 
 Solicite ao usuário uma opção digitando:
 1 - Cadastrar usuário
