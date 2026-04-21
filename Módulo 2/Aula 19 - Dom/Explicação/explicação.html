@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="explicação.css">
+    <script src="explicação.js"></script>
+    <link href="/LeaoTech/Biblioteca/Bootstrap/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<!-- Página -->
+<body style="margin-bottom: 500px;" onresize="eventosTela('redimensionado')" onscroll="eventosTela('scroll')" onload="eventosTela('carregou')">
+    <h1>Aula de eventos e DOM</h1>
+    <hr>
+    <!-- Evento mouse -->
+    <section>
+        <h2>Eventos de mouse</h2>
+
+        <!-- click -->
+        <div id="caixa1" onclick="enviarMsg('unico')" class="bg-danger text-bg-light caixa ms-1">
+            <p>caixa 1</p>
+        </div>
+        <!-- duplo click -->
+        <div id="caixa2" ondblclick="enviarMsg('duplo')" class="bg-success text-bg-light caixa ms-1">
+            <p>caixa 2</p>
+        </div>
+        <!-- passar mouse por cima -->
+        <div id="caixa3" onmouseover="enviarMsg('over')" class="bg-warning text-bg-light caixa ms-1">
+            <p>caixa 3</p>
+        </div>
+
+        <!-- quando o mouse sai -->
+        <div id="caixa4" onmouseout="enviarMsg('out')" class="bg-secondary text-bg-light caixa ms-1">
+            <p>caixa 4</p>
+        </div>
+    </section>
+    <hr>
+    <!-- Evento teclado -->
+    <section>
+        <div class="mt-3 border border-dark p-3 w-75">
+            <h2 class="mb-3">Eventos de teclado</h2>
+            <form action="" method="get" onsubmit="enviarFormulario(event)">
+                <!-- apertar tecla -->
+                <label>Key Down:</label>
+                <input onkeydown="apertouTecla('keydown')" id="nome" type="text"><br>
+
+                <!-- soltar tecla -->
+                <label>Key Up:</label>
+                <input onkeyup="apertouTecla('keyup')" type="email" name="email" id="email"><br>
+
+                <!-- foco -->
+                <label>Foco e Key Up:</label>
+                <input onfocus="eventoFormulario('foco')" type="text" name="email" id="email"><br>
+
+                <!-- executa para entrada de dados -->
+                <label>Oninput</label>
+                <input oninput="eventoFormulario('input')" type="text" name="email" id="email"><br>
+
+                <!-- quando o form perde o foco -->
+                <label>Onchange</label>
+                <input onchange="eventoFormulario('onchange')" type="text" name="email" id="email"><br>
+
+                <input type="submit" value="Enviar">
+
+            </form>
+        </div>
+    </section>
+    <hr>
+    <!-- DOM -->
+     <section class="mt-5 ms-2">
+        <button onclick="funcao1()" class="ms-2 btn btn-success">Clique aqui</button>
+        <hr>
+        <div class="mt-1">
+            <label for="nome2">Nome:</label>
+            <input id="nome2" type="text">
+        </div>
+        <div class="mt-1">
+            <label for="idade">Idade:</label>
+            <input id="idade" type="text">
+        </div>
+        <div class="mt-1">
+            <label for="cidade">Cidade:</label>
+            <input id="cidade" type="text">
+        </div>
+        <button onclick="trocarInputs()" class="btn btn-info mt-2">Saudar</button>
+        <div id="saudacao" class="mt-2"> 
+            <h1>🖖 Olá, Terraqueo!</h1>
+        </div>
+        
+     </section>
+
+</body>
+<script src="/LeaoTech/Biblioteca/Bootstrap/js/bootstrap.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+</html>
