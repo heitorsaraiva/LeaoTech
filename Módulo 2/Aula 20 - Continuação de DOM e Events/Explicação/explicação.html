@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="explicação.css">
+    <script src="explicação.js"></script>
+    <link href="/LeaoTech/Biblioteca/Bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<!-- Página -->
+
+<body>
+
+    <hr>
+    <div class="container">
+        <h1>aula de Dom e Events</h1>
+        <div class="row">
+            <div class="col-12 d-flex">
+                <div class="caixa bg-success">
+                    <p>caixa1</p>
+                </div>
+                <div class="caixa bg-black text-light">
+                    <p>caixa2</p>
+                </div>
+                <div class="caixa bg-secondary">
+                    <p>caixa3</p>
+                </div>
+            </div>
+            <div onclick="funcao1()" class="mt-5">
+                <button class="btn btn-success">Chamar função</button>
+            </div>
+
+        </div>
+
+    </div>
+    <hr>
+    <div class="container">
+        <h2>Exemplo: Calculadore de IMC</h2>
+        <div class="row ms-1">
+                <div class="">
+                    <label for="altura">Altura:</label><br>
+                    <input type="text" name="altura" id="altura" placeholder="Digite sua altura">
+                </div>
+                <div class="">
+                    <label for="peso">Peso:</label><br>
+                    <input type="text" name="peso" id="peso" placeholder="Digite seu peso">
+                </div>
+                <div class="mt-2">
+                    <button onclick="calcularImc()" class="btn btn-warning mt-2">Calcular</button>
+                </div>
+        </div>
+        <div id="resultado" class="m-3 text-danger">
+
+        </div>
+
+    </div>
+    <hr>
+
+</body>
+<script src="/LeaoTech/Biblioteca/Bootstrap/js/bootstrap.min.js"></script>
+
+</html>

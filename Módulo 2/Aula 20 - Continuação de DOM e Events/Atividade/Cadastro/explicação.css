@@ -1,0 +1,46 @@
+.cadastro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  background-color: rgb(170, 170, 170);
+  border-radius: 20px;
+}
+
+.buttonCadastro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+button {
+  box-shadow: 0 10px 150px rgb(0, 0, 0);
+  width: 230px;
+}
+
+.inputs {
+  width: 230px;
+  border-radius: 5px;
+}
+
+.listt {
+    margin-top: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    background-color: rgb(170, 170, 170);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;   /* centraliza vertical */
+    justify-content: center; /* (opcional) centraliza horizontal */
+    height: 50px; /* importante! define altura */
+    padding: 10px 10px;
+    
+}
+
+.listt p {
+    margin: 0;
+    font-size: 13px;
+}
