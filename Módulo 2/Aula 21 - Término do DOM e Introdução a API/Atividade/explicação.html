@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <link href="/Biblioteca/Bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="explicação.css">
+    <script src="explicação.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="title">
+                <h2>Formulário de Cadastro</h2>
+            </div>
+            <div class="forml">
+                <div>
+                    <label for="nome">Nome:</label><br>
+                    <input type="text" name="nome" id="nome"><br>
+                    <label for="idade">Idade:</label><br>
+                    <input type="text" maxlength="2" name="idade" id="idade"><br>
+                    <label for="foto">Foto (URL):</label><br>
+                    <input type="text" name="foto" id="foto"><br>
+                    <label for="cpf">CPF:</label><br>
+                    <input type="text" maxlength="11" name="cpf" id="cpf"><br><br>
+                </div>
+                <div>
+                    <button onclick="cadastrar()" id="cadastrar" class="btn btn-success">Cadastrar</button>
+                    <button onclick="listar()" id="listar" class="btn btn-danger">Listar</button>
+                    <button onclick="editar()" id="editar" class="btn btn-primary">Editar</button>
+                </div>
+
+            </div>
+            <div style="margin-top: 10px;" id="lista"></div>
+
+        </div>
+            
+
+    </div>
+</body>
+<script src="/Biblioteca/Bootstrap/js/bootstrap.min.js"></script>
+
+</html>
