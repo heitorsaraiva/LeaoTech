@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="explicação.css">
+    <script src="explicação.js"></script>
+    <link href="/LeaoTech/Biblioteca/Bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="m-3">
+    <!-- API -> URL -> JSON -> OBJ -->
+    <!-- https://viacep.com.br/ - API DE CEP -->
+    <!-- URL -> FETCH -> converter p onj -> usar o obj -->
+     <!-- GET - FONT -->
+
+    <div class="container">
+        <div class="row">
+            <h1>Cadastro</h1>
+
+            <div class="col-6">
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome"><br>
+            </div>
+            <div class="col-6">
+                <label for="iadade">Idade:</label><br>
+                <input type="text" id="idade"><br>
+            </div>
+            <div>
+                <label for="cep" class="mt-1">CEP:</label><br>
+                <input oninput="logQtdCaracteresPorId()" maxlength="8" class="col-11" type="text" id="cep" class="mt-1"><br>
+
+                <label for="regiao" class="mt-1">Região:</label><br>
+                <input class="col-11" type="text" id="regiao" class="mt-1"><br>
+
+                <label for="rua" class="mt-1">Rua:</label><br>
+                <input class="col-11" type="text" id="rua" class="mt-1"><br>
+
+                <label for="numero" class="mt-1">Número:</label><br>
+                <input class="col-11" type="text" id="numero" class="mt-1"><br>
+                <button class="btn btn-success mt-3 px-5">ENVIAR</button>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="/LeaoTech/Biblioteca/Bootstrap/js/bootstrap.min.js"></script>
+
+</html>
