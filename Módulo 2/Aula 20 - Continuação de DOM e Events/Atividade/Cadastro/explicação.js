@@ -3,6 +3,7 @@ const wait = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 let cadastros = []
 
 async function cadastrarUser() {
+    console.log(`Clicou em Cadastro`);
 
 
     let inputNome = document.getElementById('nome')
@@ -27,11 +28,12 @@ async function cadastrarUser() {
 
         cadastros.push(obj)
 
-        let divResultado = document.getElementById('resultado')
-        // divResultado.innerHTML = ``
-        divResultado.classList.remove('d-none')
-        await wait(3000);
-        divResultado.classList.add('d-none')
+        const toast = document.getElementById("toast");
+        toast.classList.add("show");
+
+        setTimeout(() => {
+            toast.classList.remove("show");
+        }, 3000); // some depois de 3 segundos
 
     }
 
@@ -39,7 +41,6 @@ async function cadastrarUser() {
 
 async function listarUsers() {
     console.log(`Clicou em Listar Cadastro`);
-        console.log(cadastros);
 
 
     // let divResultado = document.getElementById('resultado2')
@@ -47,7 +48,8 @@ async function listarUsers() {
     // divResultado.innerHTML = `<h5> NOME${cadastros.nome} </h5>`
     // await wait(3000);
     // divResultado.classList.add('d-none')
-    
+
 
 
 }
+

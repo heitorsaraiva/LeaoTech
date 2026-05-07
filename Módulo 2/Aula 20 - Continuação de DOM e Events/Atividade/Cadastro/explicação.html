@@ -10,41 +10,37 @@
     <link href="/LeaoTech/Biblioteca/Bootstrap/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
-<body style="background-color: grey;">
+<body style="background-color: rgb(212, 205, 205);">
+    <div id="toast">✅ Cadastro realizado!</div>
     <div style="height: 100vh;" class="container d-flex align-items-center justify-content-center">
         <div class="cadastro">
             <h3>Cadastro:</h3>
-            <div>
-                <label for="nome">Nome:</label><br>
-                <input class="inputs" type="text" name="nome" id="nome">
-            </div>
-            <div>
-                <label for="idade">Idade:</label><br>
-                <input class="inputs" type="number" name="idade" id="idade">
-            </div>
-            <div>
-                <label for="cidade">Cidade:</label><br>
-                <input class="inputs" type="text" name="cidade" id="cidade">
-            </div>
-            <div>
-                <label for="prof">Profissão:</label><br>
-                <input class="inputs" type="text" name="prof" id="prof">
-            </div>
-            <div class="buttonCadastro">
+            <form onsubmit="enviarFormulario(e)">
                 <div>
-                    <button onclick="cadastrarUser()" class="btn btn-success mb-2">Cadastrar</button>
+                    <label for="nome">Nome:</label><br>
+                    <input class="inputs" type="text" name="nome" id="nome">
                 </div>
                 <div>
-                    <button onclick="listarUsers()" class="btn btn-warning">Listar Cadastros</button>
+                    <label for="idade">Idade:</label><br>
+                    <input class="inputs" type="number" name="idade" id="idade">
                 </div>
-            </div>
-            <div class="lista">
-                <div id="resultado" class="listt d-none">
-                    <p>✅ Cadastro realizado com sucesso!</p>
+                <div>
+                    <label for="cidade">Cidade:</label><br>
+                    <input class="inputs" type="text" name="cidade" id="cidade">
                 </div>
-                <div id="resultado2" class="">
+                <div>
+                    <label for="prof">Profissão:</label><br>
+                    <input class="inputs" type="text" name="prof" id="prof">
                 </div>
-            </div>
+                <div class="buttonCadastro">
+                    <div>
+                        <button onclick="cadastrarUser()" class="btn btn-success mb-2">Cadastrar</button>
+                    </div>
+                    <div>
+                        <button onclick="listarUsers()" class="btn btn-warning">Listar Cadastros</button>
+                    </div>
+                </div>
+            </form>
 
         </div>
 

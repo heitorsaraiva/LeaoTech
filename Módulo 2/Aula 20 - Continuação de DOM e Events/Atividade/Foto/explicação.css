@@ -1,0 +1,13 @@
+.buttonLogar {
+    color: #d82929;
+    background-color: black;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 5px 70px;
+}
+
+.buttonLogar:hover{
+    color: #e4d5d5;
+    background-color: rgb(78, 76, 76);
+    
+}
