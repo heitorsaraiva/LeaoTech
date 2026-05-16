@@ -1,0 +1,160 @@
+import React, { useState, useEffect } from 'react'
+
+const Cadastro = () => {
+
+    let [email, setEmail] = useState()
+    let [senha, setSenha] = useState()
+    let [endereco, setEndereco] = useState()
+    let [cidade, setCidade] = useState()
+    let [estado, setEstado] = useState()
+    let [cep, setCep] = useState()
+
+    function filtrarEmail(valorDigitado) {
+        setEmail(valorDigitado)
+        console.log(valorDigitado.includes('@'))
+    }
+
+    function FormularioEndereco() {
+        const [cep, setCep] = useState("");
+        const [rua, setRua] = useState("");
+        const [bairro, setBairro] = useState("");
+        const [cidade, setCidade] = useState("");
+        const [uf, setUf] = useState("");
+
+        // Função para atualizar o estado do CEP
+        const filtrarCep = (valorDigitado) => {
+            setCep(valorDigitado.replace(/\D/g, "")); // remove tudo que não for número
+        };
+
+        // useEffect observa mudanças no CEP
+        useEffect(() => {
+            const buscarCep = async () => {
+                if (cep.length === 8) {
+                    try {
+                        const response = await fetch(`https://viacep.com.br/ws/${cep}/json/`);
+                        if (!response.ok) throw new Error("Erro na requisição do CEP");
+
+                        const data = await response.json();
+
+                        if (data.erro) {
+                            console.log("CEP não encontrado!");
+                            setRua("");
+                            setBairro("");
+                            setCidade("");
+                            setUf("");
+                            return;
+                        }
+
+                        // Preenche os campos automaticamente
+                        setRua(data.logradouro);
+                        setBairro(data.bairro);
+                        setCidade(data.localidade);
+                        setUf(data.uf);
+
+                    } catch (error) {
+                        console.error("Erro ao buscar CEP:", error);
+                        setRua("");
+                        setBairro("");
+                        setCidade("");
+                        setUf("");
+                    }
+                } else {
+                    // Limpa campos se o CEP tiver menos de 8 dígitos
+                    setRua("");
+                    setBairro("");
+                    setCidade("");
+                    setUf("");
+                }
+            };
+
+            buscarCep();
+        }, [cep]); // dispara sempre que o estado "cep" mudar
+
+        return (
+            <div>
+                <input
+                    type="text"
+                    placeholder="Digite o CEP"
+                    value={cep}
+                    onChange={(e) => filtrarCep(e.target.value)}
+                    maxLength={8}
+                />
+                <input type="text" placeholder="Rua" value={rua} readOnly />
+                <input type="text" placeholder="Bairro" value={bairro} readOnly />
+                <input type="text" placeholder="Cidade" value={cidade} readOnly />
+                <input type="text" placeholder="UF" value={uf} readOnly />
+            </div>
+        );
+    }
+
+    export default FormularioEndereco;
+
+    return (
+        <>
+            <div className='container mt-5' style={{ minHeight: '100vh' }}>
+                <h1>Cadastro de novo usuário</h1>
+                <div className='row justify-content-center'>
+                    <div className='col-8'>
+                        <form className="row g-3">
+                            <div className="col-md-6">
+                                <label htmlFor="inputEmail4" className="form-label">Email</label>
+                                <input type="email" className="form-control" id="inputEmail4"
+                                    onChange={(e) => filtrarEmail(e.target.value)}
+                                />
+                            </div>
+                            <div classNameass="col-md-6">
+                                <label htmlFor="inputPassword4" className="form-label">Password</label>
+                                <input type="password" className="form-control" id="inputPassword4" />
+                            </div>
+                            <div className="col-12">
+                                <label htmlFor="inputAddress" className="form-label">Address</label>
+                                <input type="text" className="form-control" id="inputAddress" placeholder="1234 Main St" />
+                            </div>
+                            <div className="col-12">
+                                <label htmlFor="inputAddress2" className="form-label">Address 2</label>
+                                <input type="text" className="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor" />
+                            </div>
+                            <div className="col-md-6">
+                                <label htmlFor="inputCity" className="form-label">City</label>
+                                <input type="text" className="form-control" id="inputCity" />
+                            </div>
+                            <div class="col-md-4">
+                                <label htmlFor="inputState" className="form-label">State</label>
+                                <select id="inputState" className="form-select">
+                                    <option selected>Choose...</option>
+                                    <option>...</option>
+                                </select>
+                            </div>
+                            <div className="col-md-2">
+                                <label htmlFor="inputZip" className="form-label">Zip</label>
+                                <input type="text" className="form-control" id="inputZip"
+                                    onChange={(z) => filtrarCep(z.target.value)} />
+                            </div>
+                            <div className="col-12">
+                                <div className="form-check">
+                                    <input className="form-check-input" type="checkbox" id="gridCheck" />
+                                    <label className="form-check-label" htmlFor="gridCheck">
+                                        Check me out
+                                    </label>
+                                </div>
+                            </div>
+                            <div className="col-12">
+                                <button type="submit" className="btn btn-primary">Sign in</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div>
+                        {email}<br />
+                        {senha}<br />
+                        {endereco}<br />
+                        {cidade}<br />
+                        {estado}<br />
+                        {cep}<br />
+                    </div>
+                </div>
+            </div>
+        </>
+    )
+}
+
+export default Cadastro
